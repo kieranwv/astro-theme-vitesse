@@ -1,2 +1,3 @@
 # vitesse-astro-theme
-🏕 Vitesse blog and portfolio theme for Astro.
+
+🏕 Vitesse theme for Astro blog, supports Vue and UnoCSS.
