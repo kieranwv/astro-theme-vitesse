@@ -6,7 +6,7 @@ Vitesse theme for Astro blog, supports Vue and UnoCSS.
 
 ## Preview
 
-![Preview Image](./preview.png)
+![Preview Image](./preview.jpg)
 
 ## Quick Start
 
