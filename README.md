@@ -12,7 +12,9 @@ Vitesse theme for Astro blog, supports Vue and UnoCSS.
 
 [![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kaivanwong/astro-theme-vitesse)
 
-If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+Click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+
+If you  just want to develop locally, you can [create a repo](https://github.com/opuntia-dev/opuntia/generate) from this template on GitHub.
 
 ## Usage
 
