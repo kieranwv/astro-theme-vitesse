@@ -1,10 +1,7 @@
 ---
 title: "The Moon and Sixpence"
-description: "人世漫长得转瞬即逝， 有人见尘埃， 有人见星辰。查尔斯就是那个终其一生在追逐星辰的人。"
 duration: "12min"
 date: "2023-09-22"
-lang: "zh-cn"
-draft: true
 ---
 
 "The Moon and Sixpence" is a captivating novel written by W. Somerset Maugham, first published in 1919. This compelling narrative delves into the life of Charles Strickland, a middle-aged English stockbroker who abandons his family and comfortable life in London to pursue his passion for painting in Paris. Inspired by the life of Paul Gauguin, Maugham crafts a mesmerizing tale exploring the complexities of art, passion, and the pursuit of one's true calling.
