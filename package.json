@@ -1,0 +1,48 @@
+{
+  "name": "astro-theme-vitesse",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.11.0",
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "simple-git-hooks",
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "bumpp"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.2.0",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/vue": "^4.0.8",
+    "@unocss/reset": "^0.58.5",
+    "astro": "^4.5.2",
+    "marked": "^11.2.0",
+    "unocss": "^0.58.5",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.1",
+    "@iconify/json": "^2.2.191",
+    "@vueuse/core": "^10.9.0",
+    "bumpp": "^9.4.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-astro": "^0.31.4",
+    "eslint-plugin-format": "^0.1.0",
+    "lint-staged": "^15.2.2",
+    "prettier-plugin-astro": "^0.13.0",
+    "simple-git-hooks": "^2.10.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm lint:fix"
+  }
+}

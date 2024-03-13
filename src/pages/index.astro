@@ -1,0 +1,55 @@
+---
+import { marked } from 'marked'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import siteConfig from '../site-config'
+
+const hero = siteConfig.hero
+---
+
+<BaseLayout description={siteConfig.description} image={siteConfig.image}>
+  {
+    (hero.title || hero.image.src || hero.text || hero.socialLinks) && (
+      <div class="prose max-w-3xl w-full">
+        {hero.title && <h1 class="text-title">{hero.title}</h1>}
+        {hero.image.src && (
+          <img
+            class="w-full"
+            src={hero.image.src}
+            loading="lazy"
+            decoding="async"
+            alt={hero.image.alt || 'Hero Image'}
+          />
+        )}
+        {hero.text && <div set:html={marked.parse(hero.text)} />}
+        {hero.socialLinks.length > 0 && (
+          <>
+            <hr class="w-14 mx-auto my-8 border-t border-truegray-200 dark:border-truegray-800" />
+            <p>Find me on</p>
+            <p class="flex gap-x-4 gap-y-2 flex-wrap">
+              {hero.socialLinks.map((link) => (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="prose-link flex items-center"
+                >
+                  <i class:list={[link.icon, 'text-sm mr-1']} />
+                  <span>{link.text}</span>
+                </a>
+              ))}
+            </p>
+          </>
+        )}
+        {siteConfig.email && (
+          <p>
+            If you have any questions, please email me at
+            <a prose-link href={`mailto:${siteConfig.email}`}>
+              {siteConfig.email}
+            </a>
+            .
+          </p>
+        )}
+      </div>
+    )
+  }
+</BaseLayout>

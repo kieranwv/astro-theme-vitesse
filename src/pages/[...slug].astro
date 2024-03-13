@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import type { CollectionPages } from '../types'
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages')
+  return pages.map((page) => {
+    return {
+      params: { slug: page.slug },
+      props: { page },
+    }
+  })
+}
+
+type Props = { page: CollectionPages }
+
+const { page } = Astro.props
+const { title, description, image } = page.data
+const { Content } = await page.render()
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  pageOperate={true}
+>
+  <article class="mb-16 sm:mb-24">
+    <h1 class="text-title">
+      {title}
+    </h1>
+    <div class="max-w-none prose">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

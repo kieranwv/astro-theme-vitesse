@@ -1,0 +1,37 @@
+---
+import { ViewTransitions } from 'astro:transitions'
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
+import PageNav from '../components/PageNav.vue'
+import PageOperate from '../components/PageOperate.vue'
+
+const { pageNav = false, pageOperate = false, ...head } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead {...head} />
+    <ViewTransitions />
+  </head>
+  <body class="bg-main text-main min-h-screen font-sans w-full">
+    <Header client:load />
+    <main class="grow max-w-3xl mx-auto py-10 px-6">
+      {pageNav && <PageNav client:load pathname={Astro.url.pathname} />}
+      <slot />
+      {
+        pageOperate && (
+          <div mt-8>
+            <PageOperate
+              client:load
+              showShare={head.pageType === 'article'}
+              url={Astro.url}
+            />
+          </div>
+        )
+      }
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "vue.vscode-typescript-vue-plugin",
+    "vue.volar",
+    "antfu.unocss",
+    "antfu.iconify"
+  ]
+}
