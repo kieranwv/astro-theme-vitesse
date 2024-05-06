@@ -2,12 +2,7 @@
   "name": "astro-theme-vitesse",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@8.11.0",
-  "engines": {
-    "node": ">=18.0"
-  },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks",
     "dev": "astro dev --host",
     "build": "astro build",
@@ -40,9 +35,9 @@
     "simple-git-hooks": "^2.10.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": "pnpm lint:fix"
+    "*": "npm run lint:fix"
   }
 }
