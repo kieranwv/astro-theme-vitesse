@@ -15,17 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set pnpm
-        uses: pnpm/action-setup@v3
-
       - name: Set node
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
-          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Lint
-        run: pnpm lint
+        run: npm run lint
