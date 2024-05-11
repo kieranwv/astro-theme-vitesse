@@ -1,17 +1,21 @@
 <script lang="ts" setup>
-import siteConfig from '../site-config'
+import siteConfig from '@/site-config'
+import { getLinkTarget } from '@/utils/link'
 </script>
 
 <template>
-  <footer class="w-full px-6 pt-4 pb-12 max-w-3xl mx-auto opacity-60">
-    <div class="mb-6 flex flex-wrap justify-center gap-x-4 gap-y-2">
-      <a v-for="link in siteConfig.footerNavLinks" :key="link.text" class="nav-link" :href="link.href">
-        {{ link.text }}
-      </a>
+  <footer class="w-full mt-18 pt-6 pb-8 max-w-3xl text-sm flex flex-col gap-4 border-main border-t !border-op-50">
+    <div v-if="siteConfig.footer.navLinks && siteConfig.footer.navLinks.length > 0" class="flex flex-wrap gap-4">
+      <template v-for="(link, index) in siteConfig.footer.navLinks" :key="link.text">
+        <a :aria-label="`${link.text}`" :target="getLinkTarget(link.href)" class="nav-link" :href="link.href">
+          {{ link.text }}
+        </a>
+        <span v-if="index < siteConfig.footer.navLinks.length - 1"> / </span>
+      </template>
     </div>
-    <div class="flex flex-wrap justify-center text-dark dark:text-white">
-      <span class="opacity-70">2023-PRESENT ©</span>
-      <a class="!nav-link opacity-100 ml-1" href="/">{{ siteConfig.author }}</a>
+    <div class="flex text-dark dark:text-white">
+      <a nav-link href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+      <span op-70>&nbsp;&nbsp;&copy;&nbsp;&nbsp;{{ new Date().getFullYear() }}&nbsp;&nbsp;{{ siteConfig.author }}.</span>
     </div>
   </footer>
 </template>

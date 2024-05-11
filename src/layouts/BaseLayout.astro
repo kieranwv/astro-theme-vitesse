@@ -1,12 +1,12 @@
 ---
+import { fade } from 'astro:transitions'
 import { ViewTransitions } from 'astro:transitions'
-import BaseHead from '../components/BaseHead.astro'
-import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
-import PageNav from '../components/PageNav.vue'
-import PageOperate from '../components/PageOperate.vue'
+import BaseHead from '@/components/BaseHead.astro'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import ScrollToTop from '@/components/ScrollToTop.vue'
 
-const { pageNav = false, pageOperate = false, ...head } = Astro.props
+const { pageOperate = false, ...head } = Astro.props
 ---
 
 <!doctype html>
@@ -15,23 +15,15 @@ const { pageNav = false, pageOperate = false, ...head } = Astro.props
     <BaseHead {...head} />
     <ViewTransitions />
   </head>
-  <body class="bg-main text-main min-h-screen font-sans w-full">
+  <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
     <Header client:load />
-    <main class="grow max-w-3xl mx-auto py-10 px-6">
-      {pageNav && <PageNav client:load pathname={Astro.url.pathname} />}
+    <main
+      class="grow max-w-3xl mx-auto sm:pt-36 pt-26 pb-16 px-6 relative"
+      transition:animate={fade({ duration: '0.4s' })}
+    >
       <slot />
-      {
-        pageOperate && (
-          <div mt-8>
-            <PageOperate
-              client:load
-              showShare={head.pageType === 'article'}
-              url={Astro.url}
-            />
-          </div>
-        )
-      }
+      <ScrollToTop client:load />
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>

@@ -1,55 +1,102 @@
 ---
-import { marked } from 'marked'
-import BaseLayout from '../layouts/BaseLayout.astro'
-import siteConfig from '../site-config'
-
-const hero = siteConfig.hero
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import siteConfig from '@/site-config'
 ---
 
-<BaseLayout description={siteConfig.description} image={siteConfig.image}>
-  {
-    (hero.title || hero.image.src || hero.text || hero.socialLinks) && (
-      <div class="prose max-w-3xl w-full">
-        {hero.title && <h1 class="text-title">{hero.title}</h1>}
-        {hero.image.src && (
-          <img
-            class="w-full"
-            src={hero.image.src}
-            loading="lazy"
-            decoding="async"
-            alt={hero.image.alt || 'Hero Image'}
-          />
-        )}
-        {hero.text && <div set:html={marked.parse(hero.text)} />}
-        {hero.socialLinks.length > 0 && (
-          <>
-            <hr class="w-14 mx-auto my-8 border-t border-truegray-200 dark:border-truegray-800" />
-            <p>Find me on</p>
-            <p class="flex gap-x-4 gap-y-2 flex-wrap">
-              {hero.socialLinks.map((link) => (
-                <a
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="prose-link flex items-center"
-                >
-                  <i class:list={[link.icon, 'text-sm mr-1']} />
-                  <span>{link.text}</span>
-                </a>
-              ))}
-            </p>
-          </>
-        )}
-        {siteConfig.email && (
-          <p>
-            If you have any questions, please email me at
-            <a prose-link href={`mailto:${siteConfig.email}`}>
-              {siteConfig.email}
-            </a>
-            .
-          </p>
-        )}
-      </div>
-    )
-  }
+<BaseLayout description={siteConfig.description}>
+  <article class="prose max-w-none w-full">
+    <h1 class="text-title">Vitesse theme</h1>
+    <p>Vitesse theme for Astro, supports Vue and UnoCSS.</p>
+    <p>
+      A minimal, SEO-riendly portfolio and blog theme for Astro. It's inspired
+      by <a target="_blank" href="https://antfu.me">antfu.me</a>.
+    </p>
+    <p>
+      <img
+        width="640"
+        height="360"
+        src="/hero.jpg"
+        loading="lazy"
+        decoding="async"
+        alt="Hero Image"
+      />
+    </p>
+    <p>
+      Based on first principles thinking, and you can also see from the picture
+      <sup>👆</sup>, the goal of this theme is to
+      <b>make complex things as simple as possible</b>
+      . So, the core of this theme is the content, and the other elements are just
+      auxiliary.
+    </p>
+    <p>Here are the features you don't need to worry about:</p>
+    <ul>
+      <li>Responsive</li>
+      <li>Light / Dark Theme</li>
+      <li>Markdown support</li>
+      <li>
+        <a target="_blank" href="https://mdxjs.com/">MDX</a>
+        (components in your markdown) support
+      </li>
+      <li>
+        <a target="_blank" href="https://vuejs.org/">Vue</a>
+        SFC component support
+      </li>
+      <li>Auto generated sitemap and RSS Feed</li>
+      <li>
+        <a target="_blank" href="https://vueuse.org/">VueUse</a>
+        &
+        <a target="_blank" href="https://lodash.com/">Lodash</a>
+        support
+      </li>
+    </ul>
+    <p>
+      By the way, this theme use the <a
+        target="_blank"
+        href="https://unocss.dev/">Unocss</a
+      > for style, it's fast.
+    </p>
+    <p>
+      Visit
+      <a
+        target="_blank"
+        href="https://github.com/kaivanwong/astro-theme-vitesse"
+      >
+        it on GitHub
+      </a>
+      to fork the repository, read the docs or one-click deploy on Netlify.
+    </p>
+    <p>
+      If you like Vitesse theme for Astro, please
+      <a target="_blank" href="https://github.com/kaivanwong">
+        click follow for me
+      </a>.
+    </p>
+    <hr class="hr-line" />
+    <p>Find me on</p>
+    <p class="flex gap-x-4 gap-y-2 flex-wrap">
+      {
+        siteConfig.socialLinks.map((link) => (
+          <a
+            aria-label={link.text}
+            href={link.href}
+            target="_blank"
+            class="prose-link"
+          >
+            <i class:list={[link.icon]} />
+            {link.text}
+          </a>
+        ))
+      }
+    </p>
+    <p>
+      If you have any questions, please email me at
+      <a
+        prose-link
+        aria-label={siteConfig.email}
+        href={`mailto:${siteConfig.email}`}
+      >
+        {siteConfig.email}
+      </a>.
+    </p>
+  </article>
 </BaseLayout>
