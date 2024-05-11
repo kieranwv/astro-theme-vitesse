@@ -1,0 +1,59 @@
+html.dark .astro-code,
+html.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: #161b22 !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #888;
+  opacity: 0.75;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+img {
+  --at-apply: rd-1.5;
+}
+
+.prose-link i {
+  --at-apply: text-sm mr-1;
+}
+
+.prose a {
+  --at-apply: prose-link;
+}
+
+.prose h1 {
+  --at-apply: text-9 mb-4;
+}
+
+.prose h2 {
+  --at-apply: mt-16 mb-4 text-6;
+}
+
+.prose h3 {
+  --at-apply: mt-10 mb-4 text-5;
+}
+
+article {
+  --at-apply: sm: min-h-38 min-h-28;
+}

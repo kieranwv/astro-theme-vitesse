@@ -1,0 +1,49 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import ListPosts from '@/components/ListPosts.vue'
+import { getPosts } from '@/utils/posts'
+import siteConfig from '@/site-config'
+import { uniqBy } from 'lodash-es'
+
+export async function getStaticPaths() {
+  const blogEntries = await getPosts()
+  return uniqBy(
+    blogEntries.map((entry) => {
+      return {
+        params: {
+          path: entry.slug.includes('/')
+            ? entry.slug.split('/').shift()
+            : undefined,
+        },
+      }
+    }),
+    'params.path',
+  )
+}
+
+const { path } = Astro.params
+
+const posts = await getPosts(path)
+---
+
+<BaseLayout
+  title="Blog"
+  description="List of all the blog posts."
+  pageNav={true}
+  pageOperate={true}
+>
+  <div class="flex flex-col gap-2 sm:flex-row sm:gap-4 flex-wrap mb-8">
+    {
+      siteConfig.page.navLinks.map((nav) => (
+        <a
+          aria-label={nav.text}
+          class={`nav-link text-3xl font-bold ${Astro.url.pathname === nav.href ? 'opacity-80' : 'opacity-30 hover:opacity-50'}`}
+          href={nav.href}
+        >
+          {nav.text}
+        </a>
+      ))
+    }
+  </div>
+  <ListPosts list={posts} />
+</BaseLayout>
