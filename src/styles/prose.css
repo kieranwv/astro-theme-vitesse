@@ -1,17 +1,5 @@
 .prose {
-  --at-apply: mb-16 max-w-none sm: min-h-50vh min-h-38vh;
-}
-.prose {
-  max-width: 65ch;
-  font-size: 1rem;
-  line-height: 1.75;
-}
-.prose [class~='lead'] {
-  color: #4b5563;
-  font-size: 1.25em;
-  line-height: 1.6;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  --at-apply: text-base lh-1.75 mb-16 max-w-none sm: min-h-50vh min-h-38vh;
 }
 .prose a {
   --at-apply: prose-link;
