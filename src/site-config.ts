@@ -90,15 +90,19 @@ export const siteConfig = {
   footer: {
     navLinks: [
       {
-        text: 'Sponsor to Me',
-        href: 'https://kaivanwong.me/sponsor/',
+        text: 'Page Title',
+        href: '/page-1',
       },
       {
-        text: 'Astro Website',
-        href: 'https://astro.build/',
+        text: 'Page Title',
+        href: '/page-2',
       },
       {
-        text: 'Theme page in Astro',
+        text: '404 Page',
+        href: '/404',
+      },
+      {
+        text: 'Vitesse Theme Link',
         href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
       },
       {

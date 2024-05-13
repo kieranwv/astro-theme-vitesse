@@ -1,6 +1,5 @@
 ---
-title: Sponsor
-description: How to sponsor for me.
+title: Page Title
 ---
 
 Writing...
