@@ -98,11 +98,7 @@ export const siteConfig = {
         href: '/md-style',
       },
       {
-        text: '404 Page',
-        href: '/404',
-      },
-      {
-        text: 'Astro Page',
+        text: 'Vitesse theme on Astro',
         href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
       },
       {
