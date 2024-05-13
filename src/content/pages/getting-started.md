@@ -1,48 +1,26 @@
 ---
-title: Page Title
+title: Getting Started
 ---
 
-The main content of your article
+Blog Props:
 
-## h2
+| Field       | Req  | Description                                |
+| :---------- | :--- | :----------------------------------------- |
+| title       | Yes  | Title of the article.                      |
+| description | Yes  | Description of the article.                |
+| image       | No   | Hero image of the article.                 |
+| date        | No   | The publication date of the article.       |
+| duration    | No   | The estimated viewing time of the article. |
+| lang        | No   | Article language, default en-US.           |
+| redirect    | No   | The redirected address of the article.     |
+| draft       | No   | The current article is in draft status.    |
+| tag         | No   | Custom tag text for the article.           |
+| video       | No   | The article contains a video.              |
 
-The main content of your article
+Page Props:
 
-### h3
-
-The main content of your article
-
-#### h4
-
-The main content of your article
-
-##### h5
-
-The main content of your article
-
-###### h6
-
-The main content of your article
-
-Table Style:
-
-| Field | Req | Description |
-| :---- | :-- | :-----------|
-| NAME | Yes | Displayed in header and footer. Used in SEO and RSS. |
-| EMAIL | Yes | Displayed in contact section. |
-| NUM_POSTS | Yes | Limit num of posts on home page. |
-| NUM_WORKS | Yes | Limit num of works on home page. |
-| NUM_PROJECTS | Yes | Limit num of projects on home page. |
-
-Code Snippet:
-
-```ts
-export const data = {
-  name: 'Name',
-  value: 'Value'
-}
-
-export function getName() {
-  return data.name
-}
-```
+| Field       | Req  | Description                                          |
+| :---------- | :--- | :--------------------------------------------------- |
+| title       | Yes  | Title of the article.                      |
+| description | Yes  | Description of the article.                |
+| image       | No   | Hero image of the article.                 |

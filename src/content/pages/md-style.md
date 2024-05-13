@@ -1,8 +1,8 @@
 ---
-title: Page Title
+title: Markdown Style
 ---
 
-The main content of your article
+The page style in your `*.md` file.
 
 ## h2
 
@@ -26,13 +26,13 @@ The main content of your article
 
 Table Style:
 
-| Field | Req | Description |
-| :---- | :-- | :-----------|
-| NAME | Yes | Displayed in header and footer. Used in SEO and RSS. |
-| EMAIL | Yes | Displayed in contact section. |
-| NUM_POSTS | Yes | Limit num of posts on home page. |
-| NUM_WORKS | Yes | Limit num of works on home page. |
-| NUM_PROJECTS | Yes | Limit num of projects on home page. |
+| Field        | Description                                          |
+| :----------- | :--------------------------------------------------- |
+| NAME         | Displayed in header and footer. Used in SEO and RSS. |
+| EMAIL        | Displayed in contact section.                        |
+| NUM_POSTS    | Limit num of posts on home page.                     |
+| NUM_WORKS    | Limit num of works on home page.                     |
+| NUM_PROJECTS | Limit num of projects on home page.                  |
 
 Code Snippet:
 
