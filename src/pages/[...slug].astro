@@ -21,11 +21,9 @@ const { title, description, image } = page.data
 const { Content } = await page.render()
 ---
 
-<BaseLayout title={title} description={description} pageOperate={true}>
-  <article class="mb-16 max-w-none prose">
-    <h1 class="text-title">
-      {title}
-    </h1>
+<BaseLayout title={title} description={description}>
+  <article class="prose">
+    <h1>{title}</h1>
     {
       image && (
         <p>

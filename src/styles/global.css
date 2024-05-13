@@ -34,6 +34,10 @@ img {
   --at-apply: rd-1.5;
 }
 
+.prose {
+  --at-apply: mb-16 max-w-none min-h-60;
+}
+
 .prose-link i {
   --at-apply: text-sm mr-1;
 }
@@ -43,7 +47,7 @@ img {
 }
 
 .prose h1 {
-  --at-apply: text-9 mb-4;
+  --at-apply: text-9 mb-4 text-title;
 }
 
 .prose h2 {

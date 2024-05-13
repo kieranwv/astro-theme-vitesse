@@ -58,8 +58,12 @@ export const siteConfig = {
         href: '/blog',
       },
       {
-        text: 'Note',
-        href: '/blog/note',
+        text: 'Notes',
+        href: '/blog/notes',
+      },
+      {
+        text: 'Talks',
+        href: '/blog/talks',
       },
       {
         text: 'Projects',
@@ -68,14 +72,18 @@ export const siteConfig = {
     ],
   },
   page: {
-    navLinks: [
+    blogLinks: [
       {
         text: 'Blog',
         href: '/blog',
       },
       {
-        text: 'Note',
-        href: '/blog/note',
+        text: 'Notes',
+        href: '/blog/notes',
+      },
+      {
+        text: 'Talks',
+        href: '/blog/talks',
       },
     ],
   },

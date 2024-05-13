@@ -27,16 +27,9 @@ function getDate(date: string) {
 }
 ---
 
-<BaseLayout
-  title={title}
-  description={description}
-  pageType="article"
-  pageOperate={true}
->
-  <article class="mb-16 max-w-none prose">
-    <h1 class="text-title">
-      {title}
-    </h1>
+<BaseLayout title={title} description={description} pageType="article">
+  <article class="prose">
+    <h1>{title}</h1>
     <p op-50>
       {date && <time datetime={getDate(date)}>{date.split(',')}</time>}
       {duration && <span>· {duration}</span>}
