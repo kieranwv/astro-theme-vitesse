@@ -1,6 +1,6 @@
 # Vitesse theme for Astro
 
-Vitesse theme for Astro, a minimal, SEO-friendly portfolio and blog theme, supports Vue and UnoCSS.
+A minimal, SEO-friendly portfolio and blog theme, supports Vue and UnoCSS.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d5bae292-6116-4c52-af4b-05eadedccc60/deploy-status)](https://app.netlify.com/sites/kaivanwong/deploys)
 
@@ -17,7 +17,7 @@ Vitesse theme for Astro, a minimal, SEO-friendly portfolio and blog theme, suppo
 - Markdown support.
 - <a target="_blank" href="https://mdxjs.com/">MDX</a> (components in your markdown) support.
 - <a target="_blank" href="https://vuejs.org/">Vue</a> SFC component support.
-- Auto generated sitemap and RSS Feed<a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support.
+- Auto generated sitemap and RSS Feed <a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support.
 - Use the <a target="_blank" href="https://unocss.dev/">Unocss</a> for style, it's fast.
 
 ## Lighthouse Performance
