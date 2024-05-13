@@ -90,19 +90,19 @@ export const siteConfig = {
   footer: {
     navLinks: [
       {
-        text: 'Page Title',
-        href: '/page-1',
+        text: 'Getting Started',
+        href: '/getting-started',
       },
       {
-        text: 'Page Title',
-        href: '/page-2',
+        text: 'Markdown Style',
+        href: '/md-style',
       },
       {
         text: '404 Page',
         href: '/404',
       },
       {
-        text: 'Vitesse Theme Link',
+        text: 'Astro Page',
         href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
       },
       {
