@@ -10,14 +10,14 @@ Vitesse theme for Astro, a minimal, SEO-friendly portfolio and blog theme, suppo
 
 ## Features
 
-- 100 / 100 Lighthouse performance
-- Responsive
-- SEO-friendly
-- Light / Dark Theme
-- Markdown support
-- <a target="_blank" href="https://mdxjs.com/">MDX</a> (components in your markdown) support
-- <a target="_blank" href="https://vuejs.org/">Vue</a> SFC component support
-- Auto generated sitemap and RSS Feed<a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support
+- 100 / 100 Lighthouse performance.
+- Responsive.
+- SEO-friendly.
+- Light / Dark Theme.
+- Markdown support.
+- <a target="_blank" href="https://mdxjs.com/">MDX</a> (components in your markdown) support.
+- <a target="_blank" href="https://vuejs.org/">Vue</a> SFC component support.
+- Auto generated sitemap and RSS Feed<a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support.
 - Use the <a target="_blank" href="https://unocss.dev/">Unocss</a> for style, it's fast.
 
 ## Lighthouse Performance
