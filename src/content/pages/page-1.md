@@ -24,6 +24,8 @@ The main content of your article
 
 The main content of your article
 
+Table Style:
+
 | Field | Req | Description |
 | :---- | :-- | :-----------|
 | NAME | Yes | Displayed in header and footer. Used in SEO and RSS. |
@@ -31,3 +33,16 @@ The main content of your article
 | NUM_POSTS | Yes | Limit num of posts on home page. |
 | NUM_WORKS | Yes | Limit num of works on home page. |
 | NUM_PROJECTS | Yes | Limit num of projects on home page. |
+
+Code Snippet:
+
+```ts
+export const data = {
+  name: 'Name',
+  value: 'Value'
+}
+
+export function getName() {
+  return data.name
+}
+```
