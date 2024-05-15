@@ -101,7 +101,7 @@ function toggleNavDrawer() {
         :target="getLinkTarget(link.href)" :href="link.href"
       />
 
-      <a nav-link href="/rss.xml" i-ri-rss-line aria-label="RSS" />
+      <a nav-link target="_blank" href="/rss.xml" i-ri-rss-line aria-label="RSS" />
       <ThemeToggle />
     </div>
   </header>
