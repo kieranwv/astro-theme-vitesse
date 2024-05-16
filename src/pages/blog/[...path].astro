@@ -17,6 +17,10 @@ export async function getStaticPaths() {
 const { path } = Astro.params
 
 const posts = await getPosts(path)
+
+function activeLink(pathname: string) {
+  return Astro.url.pathname.replace(/\/+/g, '/').replace(/\/$/, '') === pathname
+}
 ---
 
 <BaseLayout
@@ -30,7 +34,7 @@ const posts = await getPosts(path)
       siteConfig.page.blogLinks.map((nav) => (
         <a
           aria-label={nav.text}
-          class={`nav-link text-3xl font-bold ${Astro.url.pathname === nav.href ? 'opacity-80' : 'opacity-30 hover:opacity-50'}`}
+          class={`nav-link text-3xl font-bold ${activeLink(nav.href) ? 'opacity-80' : 'opacity-30 hover:opacity-50'}`}
           href={nav.href}
         >
           {nav.text}
