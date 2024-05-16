@@ -1,7 +1,7 @@
 {
   "name": "astro-theme-vitesse",
   "type": "module",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "scripts": {
     "prepare": "simple-git-hooks",
     "dev": "astro dev --host",
