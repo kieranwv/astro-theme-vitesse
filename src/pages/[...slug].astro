@@ -27,14 +27,7 @@ const { Content } = await page.render()
     {
       image && (
         <p>
-          <img
-            width="100%"
-            height="auto"
-            src={image.src}
-            loading="lazy"
-            decoding="async"
-            alt={image.alt || ''}
-          />
+          <img width="640" height="360" src={image.src} alt={image.alt || ''} />
         </p>
       )
     }
