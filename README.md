@@ -22,7 +22,7 @@ A minimal, SEO-friendly portfolio and blog theme, supports Vue and UnoCSS.
 
 ## Lighthouse Performance
 
-![Lighthouse Performance Image](./public/lighthouse.png)
+![Lighthouse Performance Image](./public/lighthouse.jpg)
 
 ## Quick Start
 
