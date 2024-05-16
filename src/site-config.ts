@@ -4,7 +4,7 @@ export const siteConfig = {
   subtitle: 'Vitesse theme for Astro, supports Vue and UnoCSS.',
   description: 'A Minimal, SEO-friendly portfolio and blog theme for Astro.',
   image: {
-    src: '/hero.jpg',
+    src: '/hero.webp',
     alt: 'Website Main Image',
   },
   email: 'kaivanwong@outlook.com',
