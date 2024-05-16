@@ -1,8 +1,8 @@
 ---
-title: Getting Started
+title: Posts Props
 ---
 
-Blog Props:
+Props in blog:
 
 | Field       | Req  | Description                                |
 | :---------- | :--- | :----------------------------------------- |
@@ -17,7 +17,7 @@ Blog Props:
 | tag         | No   | Custom tag text for the article.           |
 | video       | No   | The article contains a video.              |
 
-Page Props:
+Props in pages:
 
 | Field       | Req  | Description                                          |
 | :---------- | :--- | :--------------------------------------------------- |

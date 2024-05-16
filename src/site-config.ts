@@ -90,8 +90,8 @@ export const siteConfig = {
   footer: {
     navLinks: [
       {
-        text: 'Getting Started',
-        href: '/getting-started',
+        text: 'Posts Props',
+        href: '/posts-props',
       },
       {
         text: 'Markdown Style',
