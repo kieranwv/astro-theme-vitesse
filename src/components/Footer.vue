@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import siteConfig from '@/site-config'
-import { getLinkTarget, isExternalLink } from '@/utils/link'
+import { getLinkTarget } from '@/utils/link'
 </script>
 
 <template>
@@ -12,7 +12,6 @@ import { getLinkTarget, isExternalLink } from '@/utils/link'
           :href="link.href"
         >
           {{ link.text }}
-          <i v-if="isExternalLink(link.href)" text-sm ml-1 i-carbon-link />
         </a>
         <span v-if="index < siteConfig.footer.navLinks.length - 1"> / </span>
       </template>
