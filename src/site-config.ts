@@ -36,16 +36,6 @@ export const siteConfig = {
       href: 'https://youtube.com/@kaivanwong',
       icon: 'i-simple-icons-youtube',
     },
-    {
-      text: 'Bilibili',
-      href: 'https://space.bilibili.com/19001420',
-      icon: 'i-simple-icons-bilibili',
-    },
-    {
-      text: '微博',
-      href: 'https://weibo.com/u/5605059021',
-      icon: 'i-simple-icons-sinaweibo',
-    },
   ],
   header: {
     logo: {
