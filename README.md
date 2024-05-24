@@ -18,7 +18,7 @@ A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and Uno
 - <a target="_blank" href="https://mdxjs.com/">MDX</a> (components in your markdown) support.
 - <a target="_blank" href="https://vuejs.org/">Vue</a> SFC component support.
 - Auto generated sitemap and RSS Feed <a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support.
-- Use the <a target="_blank" href="https://unocss.dev/">Unocss</a> for style, it's fast.
+- Use the <a target="_blank" href="https://unocss.dev/">UnoCSS</a> for style, it's fast.
 
 ## Lighthouse Performance
 
