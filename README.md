@@ -2,7 +2,7 @@
 
 A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and UnoCSS.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d5bae292-6116-4c52-af4b-05eadedccc60/deploy-status)](https://app.netlify.com/sites/kaivanwong/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5bae292-6116-4c52-af4b-05eadedccc60/deploy-status)](https://app.netlify.com/sites/kevinwong865/deploys)
 
 ## Preview
 
@@ -26,11 +26,11 @@ A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and Uno
 
 ## Quick Start
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kaivanwong/astro-theme-vitesse)
+[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kevinwong865/astro-theme-vitesse)
 
 Click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
 
-If you  just want to develop locally, you can [create a repo](https://github.com/kaivanwong/astro-theme-vitesse/generate) from this template on GitHub.
+If you  just want to develop locally, you can [create a repo](https://github.com/kevinwong865/astro-theme-vitesse/generate) from this template on GitHub.
 
 ## Usage
 
@@ -102,4 +102,4 @@ Like this:
 
 ## License
 
-[MIT License](./LICENSE) © 2024-PRESENT [Kaivan Wong](https://github.com/kaivanwong)
+[MIT License](./LICENSE) © 2024-PRESENT [Kevin Wong](https://github.com/kevinwong865)

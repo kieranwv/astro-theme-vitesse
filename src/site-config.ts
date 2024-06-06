@@ -1,5 +1,5 @@
 export const siteConfig = {
-  author: 'Kaivan Wong',
+  author: 'Kevin Wong',
   title: 'Vitesse theme for Astro',
   subtitle: 'Vitesse theme for Astro, supports Vue and UnoCSS.',
   description: 'A Minimal, SEO-friendly portfolio and blog theme for Astro.',
@@ -7,33 +7,33 @@ export const siteConfig = {
     src: '/hero.jpg',
     alt: 'Website Main Image',
   },
-  email: 'kaivanwong@outlook.com',
+  email: 'kevinwong865@gmail.com',
   socialLinks: [
     {
       text: 'GitHub',
-      href: 'https://github.com/kaivanwong',
+      href: '',
       icon: 'i-simple-icons-github',
       header: 'i-ri-github-line',
     },
     {
       text: 'Twitter',
-      href: 'https://twitter.com/kaivanwong',
+      href: '',
       icon: 'i-simple-icons-x',
       header: 'i-ri-twitter-x-line',
     },
     {
       text: 'Linkedin',
-      href: 'https://www.linkedin.com/in/kaivan-wong-a42441291',
+      href: '',
       icon: 'i-simple-icons-linkedin',
     },
     {
       text: 'Instagram',
-      href: 'https://www.instagram.com/hikaivanwong',
+      href: '',
       icon: 'i-simple-icons-instagram',
     },
     {
       text: 'Youtube',
-      href: 'https://youtube.com/@kaivanwong',
+      href: '',
       icon: 'i-simple-icons-youtube',
     },
   ],
@@ -93,7 +93,7 @@ export const siteConfig = {
       },
       {
         text: 'GitHub Repository',
-        href: 'https://github.com/kaivanwong/vitesse-astro-theme',
+        href: 'https://github.com/kevinwong865/astro-theme-vitesse',
       },
     ],
   },
