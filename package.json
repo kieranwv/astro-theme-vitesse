@@ -30,11 +30,11 @@
     "@vueuse/core": "^10.11.0",
     "bumpp": "^9.4.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^1.2.2",
+    "eslint-plugin-astro": "^0.31.4",
     "eslint-plugin-format": "^0.1.2",
     "lint-staged": "^15.2.7",
     "lodash-es": "^4.17.21",
-    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-astro": "^0.13.0",
     "simple-git-hooks": "^2.11.1"
   },
   "simple-git-hooks": {
