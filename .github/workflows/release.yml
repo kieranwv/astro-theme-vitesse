@@ -19,6 +19,6 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: npx changelogen
+      - run: npx changelogen gh release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
