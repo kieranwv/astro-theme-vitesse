@@ -2,6 +2,20 @@
   "name": "astro-theme-vitesse",
   "type": "module",
   "version": "1.1.0",
+  "description": "A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and UnoCSS.",
+  "author": "Kieran Wong <kieranwong9865@gmail.com> (https://github.com/kieranwong9865/)",
+  "license": "MIT",
+  "keywords": [
+    "kieranwong9865",
+    "astro-theme-vitesse",
+    "astro",
+    "blog",
+    "starter",
+    "template"
+  ],
+  "engines": {
+    "node": ">=v18.17.1 || >=v20.3.0 || >=21"
+  },
   "scripts": {
     "prepare": "simple-git-hooks",
     "dev": "astro dev --host",
