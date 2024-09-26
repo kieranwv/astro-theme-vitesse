@@ -2,7 +2,7 @@
 
 A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and UnoCSS.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d5bae292-6116-4c52-af4b-05eadedccc60/deploy-status)](https://app.netlify.com/sites/kevinwong865/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0624323a-339f-48da-8b28-03037d664c40/deploy-status)](https://app.netlify.com/sites/astro-theme-vitesse/deploys)
 
 ## Preview
 
