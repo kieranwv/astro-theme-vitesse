@@ -102,4 +102,4 @@ Like this:
 
 ## License
 
-[MIT License](./LICENSE) © 2024 [Kieran Wong](https://github.com/kieranwong9865/)
+[MIT License](./LICENSE) © 2024 [Kieran Wang](https://github.com/kieranwv/)
