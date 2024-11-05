@@ -34,10 +34,16 @@ If you  just want to develop locally, you can [create a repo](https://github.com
 
 ## Usage
 
+First, install the dependencies.
+
+```bash
+npm install
+```
+
 Just run and visit http://localhost:1977.
 
 ```bash
-npn run dev
+npm run dev
 ```
 
 > Node.js version 18 or higher is required for this project.

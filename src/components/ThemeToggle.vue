@@ -7,9 +7,8 @@ const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
 watchEffect(() => {
-  if (isDark.value) {
+  if (isDark.value)
     setDarkMode(document)
-  }
 })
 
 function setDarkMode(document: Document) {
