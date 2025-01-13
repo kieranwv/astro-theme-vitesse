@@ -8,7 +8,8 @@ const pages = defineCollection({
       .object({
         src: z.string(),
         alt: z.string(),
-      }).optional(),
+      })
+      .optional(),
   }),
 })
 
@@ -21,7 +22,8 @@ const blog = defineCollection({
       .object({
         src: z.string(),
         alt: z.string(),
-      }).optional(),
+      })
+      .optional(),
     date: z
       .string()
       .or(z.date())

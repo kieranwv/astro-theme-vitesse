@@ -1,9 +1,9 @@
 <script lang="ts" setup>
+import siteConfig from '@/site-config'
+import { getLinkTarget } from '@/utils/link'
 import { useWindowScroll } from '@vueuse/core'
 import { computed, onMounted, ref, unref } from 'vue'
 import ThemeToggle from './ThemeToggle.vue'
-import siteConfig from '@/site-config'
-import { getLinkTarget } from '@/utils/link'
 
 const navLinks = siteConfig.header.navLinks || []
 
@@ -131,8 +131,8 @@ function toggleNavDrawer() {
 
 .nav-drawer {
   transform: translateX(-100%);
-  --at-apply: box-border fixed h-screen z-999 left-0 top-0 min-w-32vw max-w-50vw
-    bg-main p-6 text-lg flex flex-col gap-5 transition-all;
+  --at-apply: box-border fixed h-screen z-999 left-0 top-0 min-w-32vw max-w-50vw bg-main p-6 text-lg flex flex-col gap-5
+    transition-all;
 }
 
 .nav-drawer-mask {

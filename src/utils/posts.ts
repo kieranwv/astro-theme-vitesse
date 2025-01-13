@@ -1,5 +1,5 @@
-import { getCollection } from 'astro:content'
 import type { CollectionPosts, PostKey } from '@/types'
+import { getCollection } from 'astro:content'
 
 export function sortPostsByDate(itemA: CollectionPosts, itemB: CollectionPosts) {
   return new Date(itemB.data.date).getTime() - new Date(itemA.data.date).getTime()

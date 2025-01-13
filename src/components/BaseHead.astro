@@ -11,11 +11,7 @@ interface Props {
   pageType?: 'website' | 'article'
 }
 
-const {
-  description = '',
-  image = siteConfig.image,
-  pageType = 'website',
-} = Astro.props
+const { description = '', image = siteConfig.image, pageType = 'website' } = Astro.props
 
 const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(' | ')
 
@@ -57,27 +53,15 @@ function formatCanonicalURL(url: string | URL) {
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 {resolvedImage?.src && <meta property="og:image" content={resolvedImage.src} />}
-{
-  resolvedImage?.alt && (
-    <meta property="og:image:alt" content={resolvedImage.alt} />
-  )
-}
+{resolvedImage?.alt && <meta property="og:image:alt" content={resolvedImage.alt} />}
 
 <!-- X / Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={formatCanonicalURL(canonicalURL)} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-{
-  resolvedImage?.src && (
-    <meta property="twitter:image" content={resolvedImage.src} />
-  )
-}
-{
-  resolvedImage?.alt && (
-    <meta name="twitter:image:alt" content={resolvedImage?.alt} />
-  )
-}
+{resolvedImage?.src && <meta property="twitter:image" content={resolvedImage.src} />}
+{resolvedImage?.alt && <meta name="twitter:image:alt" content={resolvedImage?.alt} />}
 
 <script>
   import nprogress from 'nprogress'

@@ -8,8 +8,10 @@ import siteConfig from '@/site-config'
     <h1 class="text-title">Vitesse theme</h1>
     <p>Vitesse theme for Astro, supports Vue and UnoCSS.</p>
     <p>
-      A minimal, SEO-riendly portfolio and blog theme for Astro. It's inspired
-      by <a target="_blank" href="https://antfu.me">antfu.me</a>.
+      A minimal, SEO-riendly portfolio and blog theme for Astro. It's inspired by <a
+        target="_blank"
+        href="https://antfu.me">antfu.me</a
+      >.
     </p>
     <p>
       <img width="640" height="360" src="/hero.jpg" alt="Hero Image" />
@@ -18,8 +20,7 @@ import siteConfig from '@/site-config'
       Based on first principles thinking, and you can also see from the picture
       <sup>👆</sup>, the goal of this theme is to
       <b>make complex things as simple as possible</b>
-      . So, the core of this theme is the content, and the other elements are just
-      auxiliary.
+      . So, the core of this theme is the content, and the other elements are just auxiliary.
     </p>
     <p>Here are the features you don't need to worry about:</p>
     <ul>
@@ -45,26 +46,16 @@ import siteConfig from '@/site-config'
       </li>
     </ul>
     <p>
-      By the way, this theme use the <a
-        target="_blank"
-        href="https://unocss.dev/">UnoCSS</a
-      > for style, it's fast.
+      By the way, this theme use the <a target="_blank" href="https://unocss.dev/">UnoCSS</a> for style, it's fast.
     </p>
     <p>
       Visit it
-      <a
-        target="_blank"
-        href="https://github.com/kevinwong865/astro-theme-vitesse"
-      >
-        on GitHub
-      </a>
+      <a target="_blank" href="https://github.com/kevinwong865/astro-theme-vitesse"> on GitHub </a>
       to fork the repository, read the docs or one-click deploy on Netlify.
     </p>
     <p>
       If you like Vitesse theme for Astro, please
-      <a target="_blank" href="https://github.com/kevinwong865">
-        click follow
-      </a>
+      <a target="_blank" href="https://github.com/kevinwong865"> click follow </a>
       for me.
     </p>
     <hr class="hr-line" />
@@ -72,12 +63,7 @@ import siteConfig from '@/site-config'
     <p class="flex gap-x-4 gap-y-2 flex-wrap">
       {
         siteConfig.socialLinks.map((link) => (
-          <a
-            aria-label={link.text}
-            href={link.href}
-            target="_blank"
-            class="prose-link"
-          >
+          <a aria-label={link.text} href={link.href} target="_blank" class="prose-link">
             <i class:list={[link.icon]} />
             {link.text}
           </a>
@@ -86,11 +72,7 @@ import siteConfig from '@/site-config'
     </p>
     <p>
       If you have any questions, please email me at
-      <a
-        prose-link
-        aria-label={siteConfig.email}
-        href={`mailto:${siteConfig.email}`}
-      >
+      <a prose-link aria-label={siteConfig.email} href={`mailto:${siteConfig.email}`}>
         {siteConfig.email}
       </a>.
     </p>

@@ -25,12 +25,7 @@ function activeLink(pathname: string) {
 }
 ---
 
-<BaseLayout
-  title="Blog"
-  description="List of all the blog posts."
-  pageNav={true}
-  pageOperate={true}
->
+<BaseLayout title="Blog" description="List of all the blog posts." pageNav={true} pageOperate={true}>
   <div class="flex flex-col gap-2 sm:flex-row sm:gap-4 flex-wrap mb-8">
     {
       siteConfig.page.blogLinks.map((nav) => (
