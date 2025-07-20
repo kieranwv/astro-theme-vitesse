@@ -77,6 +77,7 @@ function toggleNavDrawer() {
 <template>
   <header
     id="header" :class="{ 'header-bg-blur': scroll > 20 }"
+    view-transition-name="site-header"
     class="!fixed bg-transparent z-899 w-screen h-20 px-6 flex justify-between items-center relative"
   >
     <div class="flex items-center h-full">
